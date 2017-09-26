@@ -1,0 +1,15 @@
+<div class="media answer">
+	<div class="pull-right">
+		<a>
+			<img class="media-object" src="uploads/{{username}}.jpg" 
+			onerror='this.src="images/user.png"'/>
+		</a>
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading"> {{username}} </h4>
+		<p>{{content}}</p>
+		<div class="media-bottom">
+			{{time | formatTime}} &#x3000;{{ip | formatIp}}
+		</div>
+	</div>
+</div>
